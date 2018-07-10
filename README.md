@@ -1,4 +1,4 @@
-# How to upload multiple images with one batch in Microsoft Customer Vision service
+# How to upload multiple images with one batch in Microsoft Custom Vision service
 
 This sample code will let you upload multiple image files, and their related tags, in one batch. It can be useful when you have to use multiple files for your object classification project.
 Let's start by creating the project. Remember to replace the keys with your own keys! You might also want to change the project name.
