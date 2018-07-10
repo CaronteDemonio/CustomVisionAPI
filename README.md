@@ -49,7 +49,7 @@ for image in os.listdir(up_dir):
     with open(os.path.join(up_dir, image), mode="rb") as img_data: 
         list_of_images.append(ImageFileCreateEntry(name=os.path.basename(image), contents = img_data.read()))
         list_of_tags.append(up_tag.id)
-        # Updates the image count the upload the batch if the count reached 64
+        # Updates the image count the upload the batch if the count reached MAX_IMAGES
         image_count += 1
         total_images_uploaded += 1
         if (image_count == MAX_IMAGES):
