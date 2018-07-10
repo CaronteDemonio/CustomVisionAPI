@@ -111,7 +111,7 @@ from azure.cognitiveservices.vision.customvision.prediction.prediction_endpoint 
 
 predictor = prediction_endpoint.PredictionEndpoint(prediction_key)
 
-# Open the sample image and get back the prediction results.
+# Open the sample image and get back the prediction results. Replace the file name below with your directory and file name
 with open("Images\\test\\200000.png", mode="rb") as test_data:
      results = predictor.predict_image_with_no_store(project.id, test_data, iteration.id)
 
